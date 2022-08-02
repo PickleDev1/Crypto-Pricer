@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "coinmarketcap-api": "^3.1.1"
+  }
+}
