@@ -1,5 +1,5 @@
 const CoinMarketCap = require('coinmarketcap-api')
-
+axios.get('website.com')
 const apiKey = '68da4c90-613d-4068-8f6d-0e7dfeff457c'
 const client = new CoinMarketCap(apiKey)
 async function getCirculating(symbol) {
@@ -7,8 +7,8 @@ const btc= await client.getQuotes({symbol:symbol}).catch(console.error)
 if(!btc) {
     return console.error(`The symbol ${symbol} is not undefined`)
 }
-const quotes = btc.data
-const USD = quotes.symbol
+const quotes1 = btc.data
+const USD = quotes1[Object.keys(quotes1)[0]]
 /**
  *   USD: {
     price: 23207.344976320368,
