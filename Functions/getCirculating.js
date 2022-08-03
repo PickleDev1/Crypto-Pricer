@@ -31,3 +31,4 @@ const USD = quotes1[Object.keys(quotes1)[0]]
 }
 getPrice('ETH')
 module.exports = getCirculating
+//hi
